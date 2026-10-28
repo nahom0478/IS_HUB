@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nahom | Portfolio</title>
+    <meta name="description" content="Portfolio of Nahom Dejene, a computer science student and frontend developer.">
+    <meta name="theme-color" content="#f5f2e9">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-paper text-ink font-sans">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    
+    <!-- Navigation -->
+    <nav aria-label="Primary navigation" class="fixed w-full bg-cream backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-2xl font-bold text-forest" aria-label="Nahom, home">Nahom</a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-forest transition">Home</a>
+                    <a href="#about" class="hover:text-forest transition">About</a>
+                    <a href="#skills" class="hover:text-forest transition">Skills</a>
+                    <a href="#projects" class="hover:text-forest transition">Projects</a>
+                    <a href="#contact" class="hover:text-forest transition">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden" aria-label="Toggle navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-t">
+            <a href="#home" class="block px-4 py-2 hover:bg-forest-light">Home</a>
+            <a href="#about" class="block px-4 py-2 hover:bg-forest-light">About</a>
+            <a href="#skills" class="block px-4 py-2 hover:bg-forest-light">Skills</a>
+            <a href="#projects" class="block px-4 py-2 hover:bg-forest-light">Projects</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-forest-light">Contact</a>
+        </div>
+    </nav>
+
+    <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 bg-paper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 text-ink">
+                Hi, I'm <span class="text-forest">Nahom Dejene</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-muted mb-8">
+                Computer Science Student & Frontend Developer
+            </p>
+            <p class="text-lg text-muted mb-12 max-w-2xl mx-auto">
+                Building responsive, accessible, and engaging websites with modern technologies
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="inline-block bg-forest text-white px-8 py-3 rounded-lg hover:bg-forest-dark transition transform hover:scale-105 text-center">
+                    View My Work
+                </a>
+                <a href="#contact" class="inline-block border-2 border-forest text-forest px-8 py-3 rounded-lg hover:bg-forest-light transition text-center">
+                    Contact Me
+                </a>
+            </div>
+            
+            <!-- Social Links -->
+            <div class="mt-12 flex justify-center space-x-6">
+                <a href="https://github.com/nahom0478" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in a new tab)" class="text-muted hover:text-forest transition">
+                    <i class="fab fa-github text-2xl" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/in/nahom-dejene" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in a new tab)" class="text-muted hover:text-forest transition">
+                    <i class="fab fa-linkedin text-2xl" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-ink">About Me</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                    <h3 class="text-2xl font-semibold mb-4 text-forest">Who am I?</h3>
+                    <p class="text-muted mb-4 leading-relaxed">
+                        I'm a Computer Science student at Addis Ababa University passionate about creating beautiful and functional web experiences. 
+                        Currently learning frontend development with a focus on building responsive and accessible websites.
+                    </p>
+                    <p class="text-muted mb-4 leading-relaxed">
+                        I have experience with programming languages like C++ and Java, and I'm expanding my skills 
+                        in web technologies including HTML5, CSS3, and Tailwind CSS.
+                    </p>
+                    <p class="text-muted mb-6 leading-relaxed">
+                        When I'm not coding, I enjoy exploring new technologies and working on projects that challenge 
+                        me to grow as a developer.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-forest-light text-forest-dark px-4 py-2 rounded-full text-sm">Problem Solver</span>
+                        <span class="bg-forest-light text-forest-dark px-4 py-2 rounded-full text-sm">Quick Learner</span>
+                        <span class="bg-forest-light text-forest-dark px-4 py-2 rounded-full text-sm">Team Player</span>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-paper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-12 text-ink">My Skills</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Frontend Skills -->
+                <div class="bg-cream p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-forest text-4xl mb-4" aria-hidden="true">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
+                    <ul class="space-y-2 text-muted">
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>HTML5</li>
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>CSS3</li>
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>Tailwind CSS</li>
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>JavaScript (ES6+)</li>
+                    </ul>
+                </div>
+                
+                <!-- Programming Languages -->
+                <div class="bg-cream p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-forest text-4xl mb-4" aria-hidden="true">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Programming</h3>
+                    <ul class="space-y-2 text-muted">
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>C++</li>
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>Java</li>
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>Git & GitHub</li>
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>Version Control</li>
+                    </ul>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="bg-cream p-8 rounded-lg shadow-md hover:shadow-xl transition">
+                    <div class="text-forest text-4xl mb-4" aria-hidden="true">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Tools</h3>
+                    <ul class="space-y-2 text-muted">
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>VS Code</li>
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>Responsive Design</li>
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>Web Accessibility</li>
+                        <li><i class="fas fa-check text-forest mr-2" aria-hidden="true"></i>UI/UX Principles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4 text-ink">My Projects</h2>
+            <p class="text-center text-muted mb-12">Check out my work on GitHub</p>
+            
+            <p id="loading" class="hidden text-center text-muted" role="status">Loading projects...</p>
+            <p id="error" class="hidden text-center text-clay" role="alert">Could not load GitHub projects. Showing featured projects instead.</p>
+            <div id="repos-container" class="hidden grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+
+            <div id="manual-projects" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <article class="bg-paper rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-forest" aria-hidden="true"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-ink">Task Manager</h3>
+                        <p class="text-muted mb-4">A JavaScript task list with filters for all, active, and completed tasks.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-forest-light text-forest-dark px-3 py-1 rounded-full text-xs">HTML5</span>
+                            <span class="bg-forest-light text-forest-dark px-3 py-1 rounded-full text-xs">CSS3</span>
+                            <span class="bg-forest-light text-forest-dark px-3 py-1 rounded-full text-xs">JavaScript</span>
+                        </div>
+                        <a href="../todo_List/todoList.html" class="text-forest hover:text-forest-dark font-medium">
+                            View project <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <article class="bg-paper rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                    <div class="h-48 bg-clay" aria-hidden="true"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-ink">Grand Horizon Hotel</h3>
+                        <p class="text-muted mb-4">A hotel website concept featuring room, amenity, and booking sections.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-forest-light text-forest-dark px-3 py-1 rounded-full text-xs">HTML</span>
+                            <span class="bg-forest-light text-forest-dark px-3 py-1 rounded-full text-xs">CSS</span>
+                            <span class="bg-forest-light text-forest-dark px-3 py-1 rounded-full text-xs">JavaScript</span>
+                        </div>
+                        <a href="../Hotel_Project/index.html" class="text-forest hover:text-forest-dark font-medium">
+                            View project <i class="fas fa-arrow-right ml-1" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-paper">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center mb-4 text-ink">Get In Touch</h2>
+            <p class="text-center text-muted mb-12 max-w-2xl mx-auto">
+                Have a question, feedback, or want to work together? Feel free to reach out!
+            </p>
+            
+            <div class="max-w-2xl mx-auto bg-cream p-8 rounded-lg shadow-md">
+                <!-- Contact Info Cards -->
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-10">
+                    <!-- Email -->
+                    <a href="mailto:nahomdejene659@gmail.com" class="flex items-center gap-4 p-4 bg-forest-light rounded-lg hover:bg-forest-light hover:shadow-md transition w-full md:w-auto justify-center">
+                        <i class="fas fa-envelope text-2xl text-forest" aria-hidden="true"></i>
+                        <div class="text-left">
+                            <p class="text-sm text-muted">Email Me</p>
+                            <p class="font-semibold text-ink">nahomdejene659@gmail.com</p>
+                        </div>
+                    </a>
+                    
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/nahom-dejene" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-4 bg-forest-light rounded-lg hover:bg-forest-light hover:shadow-md transition w-full md:w-auto justify-center">
+                        <i class="fab fa-linkedin text-2xl text-forest" aria-hidden="true"></i>
+                        <div class="text-left">
+                            <p class="text-sm text-muted">LinkedIn</p>
+                            <p class="font-semibold text-ink">Connect with me</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Simple Contact Form -->
+                <form id="contact-form" class="space-y-4" action="mailto:nahomdejene659@gmail.com" method="post" enctype="text/plain">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-ink mb-1">Name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required class="w-full px-4 py-2 border border-muted rounded-lg outline-none transition" placeholder="Your Name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-ink mb-1">Email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required class="w-full px-4 py-2 border border-muted rounded-lg outline-none transition" placeholder="your.email@example.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-ink mb-1">Message</label>
+                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-2 border border-muted rounded-lg outline-none transition" placeholder="Your message..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-forest text-white px-6 py-3 rounded-lg hover:bg-forest-dark transition font-medium transform hover:scale-[1.02]">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-ink text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="mb-4">&copy; <span id="current-year"></span> Nahom Dejene</p>
+            <p class="text-paper text-sm">Built with HTML, Tailwind CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
